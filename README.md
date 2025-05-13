@@ -37,6 +37,12 @@ Compile the project and install the generated APK on your Android device or emul
 <p>Connect an Android device or set up an emulator. </p>
 <p>Build and Run the Application </p>
 
+
+
+
+<h1>🗄️ Database</h1>
+ <p>Firebase Firestore to manage and deliver game content dynamically, enabling real-time interaction and seamless updates. Key use cases include</p>
+
 <h2>🧩 Quizzes & Questions</h2>
 <p>Store multilingual quiz sets, categorized by difficulty or topic</p>
 
