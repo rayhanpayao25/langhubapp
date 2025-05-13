@@ -31,5 +31,14 @@ Compile the project and install the generated APK on your Android device or emul
 
 🌐 Internet Connection for API calls and downloading dependencies
 
+
+<h2>🗄️ Installation Guide</h2>
+Open the Project in Android Studio
+Connect an Android device or set up an emulator.
+Add Firebase Configuration
+Build and Run the Application
+
 <h2>🗄️ Database</h2>
 Firebase
+
+
