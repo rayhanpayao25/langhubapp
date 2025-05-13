@@ -11,7 +11,9 @@
   <li>🎮 <strong>Language Learning Games</strong> – Fun games to practice vocabulary and comprehension</li>
   <li>🛠 <strong>Admin Dashboard</strong> – Manage users, content, and game data</li>
 </ul>
-  
+
+ <h2>🔧 Setup Instructions</h2>
+ 
 1. Download or Clone the Project
 Get the project files by either cloning the repository or downloading them as a ZIP file.
 
