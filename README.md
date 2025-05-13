@@ -64,25 +64,25 @@ Compile the project and install the generated APK on your Android device or emul
 
 
 1. Create a Firebase Project
-Go to the Firebase Console
+-Go to the Firebase Console
 
-Click “Add project”
+-Click “Add project”
 
-Name the project LangHub
+-Name the project LangHub
 
-Follow the setup prompts and finish the creation process
+-Follow the setup prompts and finish the creation process
 
 2. Add Your Android App to Firebase
-In your Firebase project dashboard, click “Add app”
+-In your Firebase project dashboard, click “Add app”
 
-Select Android as the platform
+-Select Android as the platform
 
-Enter your app’s package name
+-Enter your app’s package name
 (e.g., com.langhub.app)
 
-Follow the instructions to register the app
+-Follow the instructions to register the app
 
 3. Download and Add google-services.json
 After registering your app, Firebase will prompt you to download the google-services.json file
 
-Place the downloaded file inside the app/ directory of your Android Studio project
+-Place the downloaded file inside the app/ directory of your Android Studio project
