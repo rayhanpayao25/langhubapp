@@ -35,10 +35,54 @@ Compile the project and install the generated APK on your Android device or emul
 <h2>🗄️ Installation Guide</h2>
 <p>Open the Project in Android Studio </p>
 <p>Connect an Android device or set up an emulator. </p>
-<p>Add Firebase Configuration </p>
 <p>Build and Run the Application </p>
 
-<h2>🗄️ Database</h2>
-Firebase
+<h2>🧩 Quizzes & Questions</h2>
+<p>Store multilingual quiz sets, categorized by difficulty or topic</p>
 
 
+<h2>✅ Answers </h2>
+ <p> Map correct/incorrect answers for each quiz entry</p>
+
+
+
+<h2>🕹️ Game Resources </h2>
+ <p>Store game levels, user progress, scoring logic, and dynamic content</p>
+
+
+
+<h2>🔄 Real-Time Sync  </h2>
+ <p>Push updates instantly to players for interactive gameplay and competitions</p>
+
+
+ <p>Firestore’s real-time database capabilities ensure that all learning games and quizzes remain responsive, scalable, and fun.
+</p>
+
+
+ <h2>🔧 Firebase Firestore Setup </h2>
+
+
+
+1. Create a Firebase Project
+Go to the Firebase Console
+
+Click “Add project”
+
+Name the project LangHub
+
+Follow the setup prompts and finish the creation process
+
+2. Add Your Android App to Firebase
+In your Firebase project dashboard, click “Add app”
+
+Select Android as the platform
+
+Enter your app’s package name
+(e.g., com.langhub.app)
+
+Follow the instructions to register the app
+
+3. Download and Add google-services.json
+After registering your app, Firebase will prompt you to download the google-services.json file
+
+Place the downloaded file inside the app/ directory of your Android Studio project
