@@ -31,3 +31,5 @@ Compile the project and install the generated APK on your Android device or emul
 
 🌐 Internet Connection for API calls and downloading dependencies
 
+<h2>🗄️ Database</h2>
+Firebase
