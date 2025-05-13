@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Timer display -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:00"
+        android:textSize="24sp" />
+
+    <!-- Question text -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Standby..."
+        android:textSize="18sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+
+    <!-- RadioGroup for choices (only for multiple choice questions) -->
+    <RadioGroup
+        android:id="@+id/choicesRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <!-- EditText for fixed-answer questions -->
+    <EditText
+        android:id="@+id/fixedAnswerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer here"
+        android:visibility="gone" /> <!-- Initially hidden -->
+
+    <!-- Mic button (optional, for speech recognition) -->
+    <Button
+        android:id="@+id/micButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎤"
+        android:visibility="gone" /> <!-- Initially hidden -->
+
+    <!-- Next button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+
+    <ImageView
+    android:id="@+id/questionImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_centerHorizontal="true"
+    android:contentDescription="Question Image"
+    android:visibility="gone" />
+</LinearLayout>

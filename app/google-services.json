@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "687968563385",
+    "project_id": "langhubv2",
+    "storage_bucket": "langhubv2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687968563385:android:f08e29e165e54ead322b68",
+        "android_client_info": {
+          "package_name": "com.IT4A.langhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPXSxDLldd_EwJGYmuh-vrHobwMG3YG3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

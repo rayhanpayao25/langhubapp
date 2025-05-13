@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="4dp"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <!-- Centered TextView for Title -->
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Favorites"
+            android:textColor="#4387AB"
+            android:textSize="22sp"
+            android:padding="8dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="58dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🐌"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"/>
+
+            <SeekBar
+                android:id="@+id/ttsSpeedSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="200"
+                android:progress="100" />
+
+            <TextView
+                android:id="@+id/ttsSpeedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.0x"
+                android:textSize="12sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- ExpandableListView in MaterialCardView -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+
+            <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/custom_divider"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:background="#FFFFFF" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+    <android.widget.LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_blue_background"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/home_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home"
+            android:contentDescription="Home Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:tint="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/search_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_search1"
+            android:contentDescription="Search Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:tint="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_favorite"
+            android:contentDescription="Help Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent" />
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/help_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/help"
+            android:contentDescription="Help Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:tint="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/user_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="User Button"
+            android:src="@drawable/ic_user"
+            android:tint="#FFFFFF" />
+
+    </android.widget.LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

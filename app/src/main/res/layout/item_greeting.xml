@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Greeting Text (English) -->
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Spanish Translation -->
+    <TextView
+        android:id="@+id/spanishText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!-- Mandarin Translation -->
+    <TextView
+        android:id="@+id/mandarinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你好 (Nǐ hǎo)"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!-- Expand/Collapse Button -->
+    <Button
+        android:id="@+id/expandButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Translations"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

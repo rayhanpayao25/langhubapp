@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">langhub</string>
+    <string name="google_api_key">AIzaSyD2f7nNg0At5w6PYwjJgi0qybEboFr26EQ</string>
+    <string name="hello_with_wave">Hello 👋</string>
+
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="language_array">
+        <item>Please select language</item>
+        <item>English</item>
+        <item>Chinese</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string-array name="difficulty_array">
+        <item>Please select a Difficulty</item>
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string-array name="question_types">
+        <item>Multiple Choice</item>
+        <item>Fixed Answer</item>
+    </string-array>
+
+    <string name="imgbb_api_key">8f8391d6ea4040c207c4fe147a097fac</string>
+
+    <string name="create_question">Create New Question</string>
+    <string name="question_settings">Question Settings</string>
+    <string name="existing_questions">Existing Questions</string>
+    <string name="save_question">Save Question</string>
+    <string name="add_choice">Add Choice</string>
+    <string name="enter_question">Enter Question</string>
+    <string name="enter_choice">Enter new choice</string>
+    <string name="enter_answer">Enter correct answer</string>
+    <string name="enter_url">Enter URL (optional)</string>
+    <string name="enter_img_url">Enter Image URL (optional)</string>
+    <string name="difficulty_level">Difficulty Level</string>
+    <string name="language">Language</string>
+    <string name="question_type">Question Type</string>
+    <string name="choices_label">Choices (select the correct answer)</string>
+    <string name="delete">Delete</string>
+
+</resources>

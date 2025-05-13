@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/groupLayout"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:paddingBottom="15dp">
+
+
+
+
+
+        <!-- Group Title with dynamic background color and favorite icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:groupIndicator="@null"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/groupTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:groupIndicator="@null"
+                android:text="Group Title"
+                android:padding="7dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <!-- Make favoriteIcon an ImageButton for clickable functionality -->
+            <ImageButton
+                android:id="@+id/favoriteIcon"
+                android:layout_width="24dp"
+                android:visibility="gone"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_favorite_empty"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="Favorite Icon"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <!-- Translations Section (with speaker icons) -->
+        <LinearLayout
+            android:id="@+id/expandedContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="10dp">
+
+            <!-- Spanish Translation with Speaker Icon -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/spanishTranslation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Spanish: "
+                    android:textSize="14dp" />
+                <ImageView
+                    android:id="@+id/spanishSpeakerIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_speaker" />
+            </LinearLayout>
+
+            <!-- Mandarin Translation with Speaker Icon -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/mandarinTranslation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mandarin: "
+                    android:textSize="14dp" />
+                <ImageView
+                    android:id="@+id/mandarinSpeakerIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_speaker" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+

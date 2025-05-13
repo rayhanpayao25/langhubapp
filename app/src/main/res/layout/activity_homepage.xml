@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+
+    <TextView
+    android:id="@+id/textHello"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="26dp"
+    android:layout_marginTop="35dp"
+    android:text="Hello 👋"
+    android:textColor="@android:color/black"
+    android:textSize="24sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/circle_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/ic_face"
+        android:contentDescription="Circle Button"
+        android:background="@drawable/circle_button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Image with Search Box -->
+
+    <!-- RecyclerView -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/image_with_search"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textHello">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/below_icon_image"
+            android:layout_width="345dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="Phone Image"
+            android:src="@drawable/bgphone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1"
+            app:shapeAppearanceOverlay="@style/RoundedCorners" />
+
+        <android.widget.EditText
+            android:id="@+id/searchBox"
+            android:layout_width="272dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_box_background"
+            android:drawableLeft="@drawable/search"
+            android:hint="  "
+            android:importantForAccessibility="yes"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.885" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gridRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@id/rectangleBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_with_search"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Black Square Box -->
+    <View
+        android:id="@+id/white_square_box"
+        android:layout_width="430dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.widget.LinearLayout
+        android:id="@+id/rectangleBox"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_blue_background"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Home Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/home_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home"
+            android:contentDescription="Home Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent" /> <!-- Transparent background -->
+
+        <!-- Search Icon Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/search_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_search1"
+            android:contentDescription="Search Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent" /> <!-- Transparent background -->
+
+        <!-- Help Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_favorite"
+            android:contentDescription="Help Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/help_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/help"
+            android:contentDescription="Help Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent" />
+        <!-- Language Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/user_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+        android:contentDescription="User Button"
+        android:src="@drawable/ic_user" />
+    </android.widget.LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

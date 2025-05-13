@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ScrollView for instructions content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rectangleBox">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- AppBar (Toolbar) -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="-16dp"
+                android:elevation="4dp"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <!-- Centered TextView for Title -->
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Help"
+                    android:textColor="#4387AB"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="8dp" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <!-- Spinner for language selection -->
+            <Spinner
+                android:id="@+id/language_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <!-- Instructions TextViews -->
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="How to Use LangHub"
+                android:textColor="#4387AB"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/welcome_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to LangHub!"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/step1_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Step 1: Select a Language"
+                android:textColor="#4387AB"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/step1_desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First, choose a language from the list to start learning."
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/step2_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 2: Explore Features"
+                android:textStyle="bold"
+                android:textColor="#4387AB"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/step2_desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explore features like Greetings, Numbers, Conversations, and Translations to practice your skills."
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/step3_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 3: Use Speech Recognition"
+                android:textStyle="bold"
+                android:textColor="#4387AB"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/step3_desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can practice speaking by using speech recognition."
+                android:paddingTop="4dp"/>
+
+            <!-- Steps 4 to 8 with descriptions -->
+            <TextView
+                android:id="@+id/step4_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 4"
+                android:textStyle="bold"
+                android:textColor="#4387AB"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/step4_desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 4 description goes here."
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/step5_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 5"
+                android:textStyle="bold"
+                android:textColor="#4387AB"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/step5_desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 5 description goes here."
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/step6_text_view"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Step 6"
+                android:textColor="#4387AB"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/step6_desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 6 description goes here."
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/step7_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 7"
+                android:textStyle="bold"
+                android:textColor="#4387AB"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/step7_desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 7 description goes here."
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/step8_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 8"
+                android:textStyle="bold"
+                android:textColor="#4387AB"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/step8_desc_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step 8 description goes here."
+                android:paddingTop="4dp"/>
+
+            <TextView
+                android:id="@+id/tips_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Tips: Use the app daily to improve your language skills."
+                android:paddingTop="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- New LinearLayout for buttons at the bottom, centered horizontally -->
+    <android.widget.LinearLayout
+        android:id="@+id/rectangleBox"
+        android:layout_width="314dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_blue_background"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Home Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/home_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home"
+            android:contentDescription="Home Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            />
+
+        <!-- Search Icon Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/search_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_search1"
+            android:contentDescription="Search Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_favorite"
+            android:contentDescription="Help Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent" />
+
+
+        <!-- Help Button -->
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/help_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/help"
+            android:contentDescription="Help Button"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/user_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="User Button"
+            android:src="@drawable/ic_user" />
+    </android.widget.LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    
+    <!-- Storage permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    
+    <uses-feature android:name="android.hardware.camera" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.Langhub"
+        tools:targetApi="31">
+
+        <!-- MainActivity as the only entry point -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Image cropping library -->
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <!-- Main app activities -->
+        <activity android:name=".HomepageActivity" android:exported="true"/>
+        <activity android:name=".AdminPanelActivity" android:exported="true"/>
+        <activity android:name=".GreetingsActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".ConversationActivity" />
+        <activity android:name=".NumbersActivity" />
+        <activity android:name=".GamesActivity" />
+        <activity android:name=".TimeanddateActivity" />
+        <activity android:name=".TranslateviatextActivity" />
+        <activity android:name=".OcrActivity" />
+        <activity android:name=".DirectionsandPlaces" />
+        <activity android:name=".EatingoutActivity" />
+        <activity android:name=".ShoppingActivity" />
+        <activity android:name=".ColorandPaintsActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".userActivity" />
+        <activity android:name=".SearchPage" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".FavoritesActivity" />
+        <activity android:name=".QuestionsActivity" />
+        <activity android:name=".QuizActivity" />
+
+        <activity android:name=".QuizStartActivity" />
+        <activity android:name=".ScoreActivity" />
+        <activity android:name=".AdminCredentialsActivity"></activity>
+        <activity android:name=".QuizSelectionActivity" />
+        
+
+        <activity
+            android:name=".TranslateviavoiceActivity"
+            android:exported="true"
+            android:label="Translate via Voice"
+            android:launchMode="singleTop" />
+
+        <!-- New Activities for Spain, USA, China -->
+        <activity android:name=".USAPage" />
+        <activity android:name=".ChinaPage" />
+        <activity android:name=".SpainPage" />
+        <activity android:name=".UserProfileActivity"/>
+        <activity android:name=".UserProfileActivity"/>
+        <activity android:name=".EnglishActivity" />
+        <activity android:name=".ChineseActivity" />
+        <activity android:name=".SpanishActivity" />
+
+
+        <!-- MLKit OCR Dependencies -->
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr,ocr_chinese,ocr_spanish" />
+
+    </application>
+
+</manifest>
